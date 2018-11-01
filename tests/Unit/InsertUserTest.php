@@ -14,6 +14,6 @@ class InsertUserTest extends TestCase
     public function testCreate()
     {
 
-        $user = User::(10, count());
+        $users = User::(10, count());
     }
 }
