@@ -1,8 +1,9 @@
 <?php
-namespace Tests\Feature;
+namespace Tests\Unit;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use App\User
 class InsertUserTest extends TestCase
 {
     /**
@@ -10,9 +11,9 @@ class InsertUserTest extends TestCase
      *
      * @return void
      */
-    public function Create()
+    public function testCreate()
     {
 
-        $response = $this->get('/register');
-        $response->assertStatus(200);    }
+        $user = User::(10, count());
+    }
 }
