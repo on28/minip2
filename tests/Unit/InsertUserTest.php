@@ -3,7 +3,8 @@ namespace Tests\Unit;
 use Tests\TestCase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use App\User
+use App\User;
+
 class InsertUserTest extends TestCase
 {
     /**
@@ -14,6 +15,8 @@ class InsertUserTest extends TestCase
     public function testCreate()
     {
 
-        $users = User::(10, count());
+        $user = factory(\App\User::class)->make();
+        $this->assertTrue($user->save());
     }
 }
+
